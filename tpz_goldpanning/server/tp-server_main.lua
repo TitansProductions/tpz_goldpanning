@@ -18,8 +18,7 @@ TPZInv.registerUsableItem(Config.GoldPanItem, "tpz_goldpanning", function(data)
 
 	TriggerClientEvent('tpz_goldpanning:startPanning', _source)
 
-	TPZInv.removeItemDurability(_source, Config.GoldPanItem, Config.DurabilityRemove, data.itemId)
-
+	TPZInv.removeItemDurability(_source, Config.GoldPanItem, Config.DurabilityRemove, data.itemId, false)
 	--TPZInv.closeInventory(_source)  -- This is not required since we have already set it as closeInventory = true  from database `tpz_items` table.
 end)
 
