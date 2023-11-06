@@ -13,7 +13,7 @@ TPZInv = exports.tpz_inventory:getInventoryAPI() -- Getting the inventory API Fu
 -- @param durability - returns the durability (exists only for non-stackable items).
 -- @param metadata   - returns the metadata that you have created on the given item.
 
-TPZInv.registerUsableItem(Config.GoldPanItem, function(data)
+TPZInv.registerUsableItem(Config.GoldPanItem, "tpz_goldpanning", function(data)
 	local _source = data.source
 
 	TriggerClientEvent('tpz_goldpanning:startPanning', _source)
